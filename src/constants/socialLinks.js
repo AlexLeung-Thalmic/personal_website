@@ -6,25 +6,25 @@ const data = [
     id: 1,
     icon: <FaLinkedin className="social-icon" />,
     footer: <FaLinkedinIn />,
-    url: 'https://www.linkedin.com'
+    url: 'https://www.linkedin.com/in/leungalex'
   },
   {
     id: 2,
     icon: <FaTwitterSquare className="social-icon" />,
     footer: <FaTwitter />,
-    url: 'https://www.twitter.com'
+    url: 'https://www.twitter.com/acl1n4l'
   },
   {
     id: 3,
     icon: <FaInstagramSquare className="social-icon" />,
     footer: <FaInstagram />,
-    url: 'https://www.instagram.com'
+    url: 'https://www.instagram.com/rootpanda'
   },
   {
     id: 4,
     icon: <FaGithubSquare className="social-icon" />,
     footer: <FaGithub />,
-    url: 'https://www.github.com'
+    url: 'https://www.github.com/AlexLeung-Thalmic'
   }
 ];
 

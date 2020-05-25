@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata:{
     title: "Alex Leung",
@@ -5,7 +9,7 @@ module.exports = {
     author: "@christinayun",
     twitterUsername: "@acl1n4l",
     image: "/twitter.png",
-    siteUrl: "https://alex-leung-netlify.netlify.app"
+    siteUrl: process.env.METADATA_SITE_URL
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -24,7 +28,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: process.env.STRAPI_API_URL,
         queryLimit: 1000, // Default to 100
         contentTypes: [`experiences`, `blogs`],
         //If using single types place them in this array.

@@ -211,3 +211,8 @@ navlinks
   .ScrollUpButton__Container:focus {
     outline: none;
   }
+
+/* pages */
+.blog-page, .blog-template-page {
+  min-height: 100vh;
+}

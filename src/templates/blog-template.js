@@ -15,7 +15,7 @@ const BlogTemplate = ({ data }) => {
     <Layout>
       <SEO title={title} />
       <ScrollUpButton ContainerClassName="ScrollUpButton__Container" />
-      <BlogTempWrapper>
+      <BlogTempWrapper className="blog-template-page">
         <div className="section-center blog-temp-center">
           <article className="blog-content">
             <ReactMarkdown source={content} />

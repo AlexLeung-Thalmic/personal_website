@@ -4,6 +4,7 @@ import ScrollUpButton from 'react-scroll-up-button';
 import Layout from "../components/Layout";
 import Blogs from '../components/blogs/Blogs';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 
 export const query = graphql`
   {
@@ -31,6 +32,7 @@ const blog = ({
 }) => {
   return (
     <Layout>
+      <SEO title="Blog" description="Alex Leung's Blog" />
       <ScrollUpButton ContainerClassName="ScrollUpButton__Container" />
       <section className="blog-page">
         <Blogs blogs={blogs} />

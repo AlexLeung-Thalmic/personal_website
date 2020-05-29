@@ -25,20 +25,28 @@ padding-bottom: 10rem;
 margin-top: -6rem;
 background: hsl(210, 36%, 96%);
 
-  .timeline-container {
+ .timeline-container {
     display:flex;
     flex-direction: column;
     padding: 2.4rem 0;
     position: relative;
   }
+
   .timeline-container:after {
     background-color: lightgray;
     content: '';
     position: absolute;
     width: 2px;
     height: 100%;
-    left: calc(50% - 1px);
+    left: calc(10% - 1px);
+  }
+
+  @media (min-width: 768px) {
+    .timeline-container:after {
+      height: 100%;
+      left: calc(50% - 1px);
+    }
   }
 `;
 
-export default Timeline
+export default Timeline;

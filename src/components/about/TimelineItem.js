@@ -16,20 +16,39 @@ const TimelineItem = ({ data, index }) => {
 
     <TimeItemWrapper>
       <div className="timeline-item-content">
-        <div data-aos={`${index % 2 === 0 ? 'fade-left' : 'fade-right'}`}>
+        {/* desktop view */}
+        <div data-aos={`${index % 2 === 0 ? 'fade-left' : 'fade-right'}`} className="desktop">
           <h2>{position}</h2>
-        </div>
-
-        <div className="time" data-aos={`${index % 2 === 0 ? 'fade-right' : 'fade-left'}`}>
-          <h4>{company}</h4>
-          <span className="date">{startDate}{endDate ? ` - ${endDate}` : ''}</span>
-        </div>
-
-        <div data-aos={`${index % 2 === 0 ? 'fade-left' : 'fade-right'}`}>
           {desc.map(i => (
             <p key={i.id}>{i.name}</p>
           ))}
         </div>
+
+        <div className="time desktop" data-aos={`${index % 2 === 0 ? 'fade-right' : 'fade-left'}`} >
+          <h4>{company}</h4>
+          <span className="date">{startDate}{endDate ? ` - ${endDate}` : ''}</span>
+        </div>
+      
+        {/* end of desktop view */}
+
+        {/* mobile view */}
+        <div data-aos='fade-left' className="mobile">
+          <h2>{position}</h2>
+
+        </div>
+
+        <div className="time mobile" data-aos="fade-left">
+          <h4>{company}</h4>
+          <span className="date">{startDate}{endDate ? ` - ${endDate}` : ''}</span>
+        </div>
+
+        <div className="time mobile" data-aos="fade-left">
+          {desc.map(i => (
+            <p key={i.id}>{i.name}</p>
+          ))}
+        </div>
+        {/* end of mobile view */}
+
       </div>
     </TimeItemWrapper>
   )

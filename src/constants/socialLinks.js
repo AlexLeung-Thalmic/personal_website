@@ -24,7 +24,7 @@ const data = [
     id: 4,
     icon: <FaGithubSquare className="social-icon" />,
     footer: <FaGithub />,
-    url: 'https://www.github.com/AlexLeung-Thalmic'
+    url: 'https://www.github.com/aclinal'
   }
 ];
 

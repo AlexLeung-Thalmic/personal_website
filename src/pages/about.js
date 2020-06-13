@@ -46,7 +46,7 @@ const about = ({
 }) => {
   return (
     <Layout>
-      <SEO title="About" description="About Alex Leung" />
+      <SEO title="About" description="Learn about Alex Leung, software engineer." />
       <ScrollUpButton ContainerClassName="ScrollUpButton__Container"/>
       <Biograph bio={bio} />
       <Timeline exp={exp} />

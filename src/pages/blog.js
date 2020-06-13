@@ -32,7 +32,7 @@ const blog = ({
 }) => {
   return (
     <Layout>
-      <SEO title="Blog" description="Alex Leung's Blog" />
+      <SEO title="Blog" description="Alex Leung shares his thought on technology and life in his blog." />
       <ScrollUpButton ContainerClassName="ScrollUpButton__Container" />
       <section className="blog-page">
         <Blogs blogs={blogs} />

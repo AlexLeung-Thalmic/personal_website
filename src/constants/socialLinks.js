@@ -6,7 +6,7 @@ const data = [
     id: 1,
     icon: <FaLinkedin className="social-icon" />,
     footer: <FaLinkedinIn />,
-    url: 'https://www.linkedin.com/in/leungalex'
+    url: 'https://www.linkedin.com/in/aclinal'
   },
   {
     id: 2,

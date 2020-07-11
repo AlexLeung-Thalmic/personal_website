@@ -11,8 +11,8 @@ const Hero = () => {
       <div className="section-center hero-center">
         <div className="hero-info">
           <div className="text-top">
-            <h1>alex leung</h1>
-            <h3>A software engineer at North</h3>
+            <h1>Alex Leung</h1>
+            <h3>A software engineer at Cash App</h3>
           </div>
           <div className="text-bottom">
             <SocialLinks />
